@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>aRatoCat's Random Shite</name>
+	<author>Crazedmonkey231</author>
+	<packageId>crazedmonkey231.random.collection</packageId>
+	<supportedVersions>
+		<li>1.3</li>
+	</supportedVersions>
+	<description>IDK</description>
+</ModMetaData>
