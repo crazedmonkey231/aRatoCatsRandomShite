@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+        <defName>AnimaStrawBundle</defName>
+        <label>anima straw bundle</label>
+        <description>straw bundle</description>
+        <graphicData>
+            <texPath>Things/anima-straw-bundle</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(1,1)</drawSize>
+        </graphicData>
+        <size>(1,1)</size>
+        <techLevel>Spacer</techLevel>
+        <weaponTags>
+            <li>LongSword</li>
+        </weaponTags>
+        <costList>
+            <Hay>50</Hay>
+            <Plasteel>25</Plasteel>
+        </costList>
+        <thingSetMakerTags>
+            <li>RewardStandardQualitySuper</li>
+        </thingSetMakerTags>
+        <statBases>
+            <WorkToMake>18000</WorkToMake>
+            <Mass>1</Mass>
+        </statBases>
+        <relicChance>2</relicChance>
+        <equippedAngleOffset>-25</equippedAngleOffset>
+        <tools>
+            <li>
+                <label>edge</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>25</power>
+                <cooldownTime>1.6</cooldownTime>
+            </li>
+        </tools>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>5</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <allowedArchonexusCount>1</allowedArchonexusCount>
+    </ThingDef>
+</Defs>
