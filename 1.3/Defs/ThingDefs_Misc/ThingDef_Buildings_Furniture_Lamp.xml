@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <ThingDef Abstract="True" Name="GodsAbyssLampBase" ParentName="LampBase">
+        <graphicData>
+			<drawSize>(4,10)</drawSize>
+        </graphicData>
+        <uiIconScale>3</uiIconScale>
+		<size>(4,4)</size>
+        <statBases>
+            <Mass>4</Mass>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToBuild>100</WorkToBuild>
+			<MarketValue>15</MarketValue>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>25</basePowerConsumption>
+            </li>
+        </comps>
+        <rotatable>false</rotatable>
+        <selectable>true</selectable>
+    </ThingDef>
+	
+    <ThingDef ParentName="GodsAbyssLampBase">
+        <defName>GodsAbyssLight</defName>
+        <label>Gods-Abyss</label>
+        <description>Wow just wow.</description>
+        <graphicData>
+            <texPath>Things/gods-abyss</texPath>
+        </graphicData>
+        <costList>
+            <Plasteel>500</Plasteel>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Glower">
+                <glowRadius>24</glowRadius>
+                <glowColor>(0,217,0,0)</glowColor>
+            </li>
+        </comps>
+    </ThingDef>
+
+</Defs>
