@@ -3,10 +3,10 @@
 
     <ThingDef Abstract="True" Name="GodLampBase" ParentName="LampBase">
         <graphicData>
-			<drawSize>(2,4)</drawSize>
+			<drawSize>(1,2)</drawSize>
         </graphicData>
-        <uiIconScale>3</uiIconScale>
-		<size>(1,2)</size>
+        <uiIconScale>0.8</uiIconScale>
+		<size>(1,1)</size>
         <statBases>
             <Mass>4</Mass>
 			<MaxHitPoints>75</MaxHitPoints>
@@ -31,7 +31,7 @@
             <texPath>Things/gods-abyss</texPath>
         </graphicData>
         <costList>
-            <Plasteel>500</Plasteel>
+            <Plasteel>100</Plasteel>
         </costList>
         <comps>
             <li Class="CompProperties_Glower">
@@ -49,12 +49,30 @@
             <texPath>Things/QueensLight</texPath>
         </graphicData>
         <costList>
-            <Plasteel>500</Plasteel>
+            <Plasteel>100</Plasteel>
         </costList>
         <comps>
             <li Class="CompProperties_Glower">
                 <glowRadius>24</glowRadius>
                 <glowColor>(200,100,200,0)</glowColor>
+            </li>
+        </comps>
+    </ThingDef>
+	
+    <ThingDef ParentName="GodLampBase">
+        <defName>Unknown</defName>
+        <label>Unknown</label>
+        <description>Wow just wow.</description>
+        <graphicData>
+            <texPath>Things/unknown</texPath>
+        </graphicData>
+        <costList>
+            <Plasteel>100</Plasteel>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Glower">
+                <glowRadius>24</glowRadius>
+                <glowColor>(217,217,217,0)</glowColor>
             </li>
         </comps>
     </ThingDef>
