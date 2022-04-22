@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-    <ThingDef Abstract="True" Name="GodsAbyssLampBase" ParentName="LampBase">
+    <ThingDef Abstract="True" Name="GodLampBase" ParentName="LampBase">
         <graphicData>
-			<drawSize>(4,10)</drawSize>
+			<drawSize>(2,4)</drawSize>
         </graphicData>
         <uiIconScale>3</uiIconScale>
-		<size>(4,4)</size>
+		<size>(1,2)</size>
         <statBases>
             <Mass>4</Mass>
 			<MaxHitPoints>75</MaxHitPoints>
@@ -23,7 +23,7 @@
         <selectable>true</selectable>
     </ThingDef>
 	
-    <ThingDef ParentName="GodsAbyssLampBase">
+    <ThingDef ParentName="GodLampBase">
         <defName>GodsAbyssLight</defName>
         <label>Gods-Abyss</label>
         <description>Wow just wow.</description>
@@ -41,4 +41,21 @@
         </comps>
     </ThingDef>
 
+    <ThingDef ParentName="GodLampBase">
+        <defName>QueensLight</defName>
+        <label>Queens Light</label>
+        <description>Wow just wow.</description>
+        <graphicData>
+            <texPath>Things/QueensLight</texPath>
+        </graphicData>
+        <costList>
+            <Plasteel>500</Plasteel>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Glower">
+                <glowRadius>24</glowRadius>
+                <glowColor>(200,100,200,0)</glowColor>
+            </li>
+        </comps>
+    </ThingDef>
 </Defs>
